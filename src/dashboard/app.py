@@ -6,6 +6,7 @@ from dash.dependencies import Input, Output
 
 #Flask server
 server = Flask(__name__)
+server.config["latest_data"] = "No data yet"
 
 #Flash app
 app = dash.Dash(__name__, server = server)
@@ -22,17 +23,17 @@ app.layout = html.Div([
         Input("interval-update", "n_intervals")
 )
 def update(n):
-    return f"Latest Data: {latest_data}"
+    return f"Latest Data: {server.config['latest_data']}"
 
 
 @server.route("/post-sensor-data", methods = ["POST"])
 def post_sensor_data():
-    global latest_data
     latest_data = request.get_json() #gets JSON from request
+    server.config["latest_data"] = latest_data
 
     print("POST data successfully recieved", latest_data)
     return jsonify({"status": "received", "data": latest_data}), 200
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8051)
+    app.run(debug=False, port=8051)
 
