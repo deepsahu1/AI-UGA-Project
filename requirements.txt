@@ -1,0 +1,2 @@
+dash                 # for the dashboard UI
+flask                # for receiving sensor data via POST
