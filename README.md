@@ -7,7 +7,6 @@ This repository contains the code, documentation, and resources for the AI@UGA W
 - [Roles and Responsibilities](#roles-and-responsibilities)  
 - [Project Timeline](#project-timeline)  
 - [Getting Started](#getting-started)  
-- [Repository Structure](#repository-structure)  
 
 ## Roles and Responsibilities
 We’re organized into five cross-functional subteams:
@@ -62,29 +61,15 @@ High-level phases and deliverables by date:
 ### Installation
 1. **Clone the repo**  
    ```bash
-   git clone git@github.com:your-org/water-quality-monitoring.git
-   cd water-quality-monitoring
+   git clone git@github.com:deepsahu1/AI-UGA-Project.git
+   cd AI-UGA-Project
    
 2. **Create and activate virtual environment**
+   ```bash
     python3 -m venv venv
     source venv/bin/activate
 
 3. **Install dependencies**
     pip install -r requirements.txt
 
-Repository Structure
-
-├── README.md
-├── requirements.txt
-├── data/
-│   ├── raw/                   # Public and faculty-mentor datasets
-│   └── processed/             # Cleaned CSVs ready for training
-├── src/
-│   ├── scripts/               # Data ingestion & preprocessing scripts
-│   ├── models/                # Training & evaluation code
-│   └── dashboard/             # Flask + Dash app
-├── statistical_analysis/      # Statistical analysis outputs
-│   ├── stat_analysis_code/    # R/Python scripts for statistical workflows
-│   └── stat_analysis_results/ # Generated figures, tables, and summary reports
-└── docs/                      # Design docs, sketches, and reports
 
