@@ -1,2 +1,7 @@
 dash                 # for the dashboard UI
 flask                # for receiving sensor data via POST
+pandas               # for data manipulation
+matplotlib          # for plotting
+numpy               # for numerical operations
+scikit-learn        # for metrics
+requests            # for making HTTP requests
