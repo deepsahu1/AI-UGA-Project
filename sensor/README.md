@@ -69,3 +69,5 @@ If `sensor_ready` is `False`, the other fields will be `None`.
   - `http://localhost:8000` (`127.0.0.1:8000`)
   - `http://geologypi.elephant-city.ts.net:8000` (`100.68.5.52:8000`), the Raspberry Pi’s **Tailscale** address.
 - To use the API from **another device on the same Tailnet**, call `read(local=False)` to connect via the Raspberry Pi’s Tailscale address.
+
+[Read more about Tailscale here.](../tailscale/README.md)
